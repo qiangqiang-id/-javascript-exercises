@@ -5,7 +5,7 @@
  
 /**
  * 顶级抽象工厂
- * 类似一种约定，不管创建什么样的手机，都得按照一个框架来
+ * 抽象工厂类似一种约定，不管创建什么样的手机，都得按照一个框架来
  */
 class MobilePhoneFactory {
   // 创建操作系统接口，及软件
@@ -19,7 +19,9 @@ class MobilePhoneFactory {
   }
 }
 
- 
+/**
+ * 制造一台IPhone13手机
+ */
 class IPhone13 extends MobilePhoneFactory {
   createOS() {
      // 采用ios系统
